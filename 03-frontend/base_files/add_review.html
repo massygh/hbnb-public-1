@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Chemin mis à jour -->
     <title>Add Review</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <img src="logo.png" class="logo" alt="Application Logo">
+        <a href="index.html" class="login-button">Home</a>
+    </header>
     <main>
+        <h1>Add Review</h1>
         <form id="review-form">
-            <h2>Add a Review</h2>
-            <label for="place">Place:</label>
-            <input type="text" id="place" name="place" readonly>
-            
+            <label for="place-id">Place ID:</label>
+            <input type="text" id="place-id" required>
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" min="1" max="5" required>
             <label for="review">Review:</label>
-            <textarea id="review" name="review" required></textarea>
-            
-            <button type="submit">Submit</button>
+            <textarea id="review" required></textarea>
+            <button type="submit">Submit Review</button>
         </form>
     </main>
-    <script src="scripts.js"></script>
+    <footer>
+        <p>© 2024 HBnB. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script> <!-- Chemin mis à jour -->
 </body>
 </html>
+

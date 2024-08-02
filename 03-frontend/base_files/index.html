@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Chemin mis à jour -->
     <title>List of Places</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="login.html" id="login-link">Login</a>
-        </nav>
+        <img src="logo.png" class="logo" alt="Application Logo">
+        <a id="login-link" href="login.html" class="login-button">Login</a>
     </header>
     <main>
-        <section id="filter">
-            <label for="country-filter">Filter by Country:</label>
-            <select id="country-filter">
-                <!-- Options will be populated dynamically -->
-            </select>
-        </section>
-        <section id="places-list">
-            <!-- List of places will be populated dynamically -->
+        <h1>List of Places</h1>
+        <label for="country-filter">Filter by Country:</label>
+        <select id="country-filter">
+            <option value="">All Countries</option>
+            <!-- Options seront ajoutées dynamiquement -->
+        </select>
+        <section id="places-list" class="places-list">
+            <!-- Les cartes de lieu seront ajoutées dynamiquement ici -->
         </section>
     </main>
-    <script src="scripts.js"></script>
+    <footer>
+        <p>© 2024 HBnB. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script> <!-- Chemin mis à jour -->
 </body>
 </html>
